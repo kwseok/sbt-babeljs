@@ -8,7 +8,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-resolvers += "bintray-stonexx-sbt-plugins" at "https://dl.bintray.com/stonexx/sbt-plugins"
+resolvers += Resolver.url("bintray-stonexx-sbt-plugins", url("http://dl.bintray.com/stonexx/sbt-plugins"))(Resolver.ivyStylePatterns)
 
 addSbtPlugin("io.teamscala.sbt" % "sbt-babeljs" % "1.0.0")
 ```
