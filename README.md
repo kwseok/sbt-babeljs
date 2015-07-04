@@ -10,7 +10,7 @@ To use this plugin use the addSbtPlugin command within your project's `plugins.s
 ```scala
 resolvers += Resolver.url("bintray-stonexx-sbt-plugins", url("http://dl.bintray.com/stonexx/sbt-plugins"))(Resolver.ivyStylePatterns)
 
-addSbtPlugin("io.teamscala.sbt" % "sbt-babeljs" % "1.0.0")
+addSbtPlugin("io.teamscala.sbt" % "sbt-babeljs" % "1.0.1")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:

@@ -45,7 +45,8 @@ object SbtBabelJS extends AutoPlugin {
     )
   ) ++ SbtJsTask.addJsSourceFileTasks(babeljs) ++ Seq(
     babeljs in Assets := (babeljs in Assets).dependsOn(nodeModules in Assets).value,
-    babeljs in TestAssets := (babeljs in TestAssets).dependsOn(nodeModules in TestAssets).value
+    babeljs in TestAssets := (babeljs in TestAssets).dependsOn(nodeModules in TestAssets).value,
+    nodeModuleDirectories in Plugin <++= nodeModuleDirectories in Assets
   )
 
 }
