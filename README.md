@@ -1,6 +1,6 @@
 # sbt-babeljs [![Build Status](https://travis-ci.org/stonexx/sbt-babeljs.svg?branch=master)](https://travis-ci.org/stonexx/sbt-babeljs)
 
-Provides an `sbt-web` source task for the [babeljs.io](http://babeljs.io) transpiler.
+Provides an `sbt-web` source task for the [babeljs.io](http://babeljs.io) transpiler. derived from [onelson/sbt-babeljs](https://github.com/onelson/sbt-babeljs)
 
 Installation
 ------------
