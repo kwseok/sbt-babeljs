@@ -6,7 +6,7 @@ name := "sbt-babeljs"
 
 scalaVersion := "2.10.5"
 
-resolvers += Resolver.sbtPluginRepo("snapshots")
+resolvers += Resolver.typesafeRepo("releases")
 
 libraryDependencies ++= Seq(
   "com.typesafe" % "jstranspiler" % "1.0.0"
