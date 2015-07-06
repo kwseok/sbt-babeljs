@@ -33,6 +33,8 @@ object SbtBabelJS extends AutoPlugin {
     jsOptions := options.value.js
   )
 
+  private val NodeModules = "node_modules"
+
   override def projectSettings = Seq(options := JS.Object.empty) ++ inTask(babeljs)(
     SbtJsTask.jsTaskSpecificUnscopedSettings ++
     inConfig(Assets)(babeljsUnscopedSettings) ++
@@ -46,7 +48,7 @@ object SbtBabelJS extends AutoPlugin {
   ) ++ SbtJsTask.addJsSourceFileTasks(babeljs) ++ Seq(
     babeljs in Assets := (babeljs in Assets).dependsOn(nodeModules in Assets).value,
     babeljs in TestAssets := (babeljs in TestAssets).dependsOn(nodeModules in TestAssets).value,
-    nodeModuleDirectories in Plugin <++= nodeModuleDirectories in Assets
+    nodeModuleDirectories in Plugin += baseDirectory.value / NodeModules
   )
 
 }
