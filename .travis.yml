@@ -4,3 +4,6 @@ scala:
 script:
   - "sbt ++$TRAVIS_SCALA_VERSION test"
   - "sbt ++$TRAVIS_SCALA_VERSION scripted"
+branches:
+  except:
+    - /^v[0-9]/
