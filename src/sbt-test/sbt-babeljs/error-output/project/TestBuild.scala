@@ -2,8 +2,8 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import com.typesafe.sbt.web.SbtWeb
 import com.typesafe.sbt.web.SbtWeb.autoImport._
-import sbt.Keys._
 import sbt._
+import sbt.Keys._
 
 object TestBuild extends Build {
 

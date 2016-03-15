@@ -1,6 +1,9 @@
 {
   "devDependencies": {
-    "babel-core": "^6.2.4",
-    "babel-plugin-transform-react-jsx": "^6.2.4"
+    "babel-core": "^6.7.2",
+    "babel-plugin-transform-es2015-modules-umd": "^6.6.5",
+    "babel-plugin-transform-react-jsx": "^6.6.5",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0"
   }
 }
