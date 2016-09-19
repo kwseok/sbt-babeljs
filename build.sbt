@@ -1,6 +1,6 @@
 sbtPlugin := true
 
-organization := "io.teamscala.sbt"
+organization := "com.github.stonexx.sbt"
 
 name := "sbt-babeljs"
 
@@ -10,6 +10,6 @@ resolvers += Resolver.typesafeRepo("releases")
 
 libraryDependencies += "com.typesafe" % "jstranspiler" % "1.0.0"
 
-addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.1.3")
+addSbtPlugin("com.typesafe.sbt" %% "sbt-js-engine" % "1.1.4")
 
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

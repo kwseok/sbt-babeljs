@@ -1,4 +1,4 @@
-package io.teamscala.sbt.babeljs
+package com.github.stonexx.sbt.babeljs
 
 import com.typesafe.sbt.jse.SbtJsTask
 import com.typesafe.sbt.web.Import.WebJs.JS

@@ -1,1 +1,1 @@
-addSbtPlugin("io.teamscala.sbt" % "sbt-babeljs" % sys.props("project.version"))
+addSbtPlugin("com.github.stonexx.sbt" % "sbt-babeljs" % sys.props("project.version"))
