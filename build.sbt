@@ -4,9 +4,9 @@ organization := "com.github.stonexx.sbt"
 
 name := "sbt-babeljs"
 
-scalaVersion := "2.10.5"
+scalaVersion := "2.10.6"
 
-resolvers += Resolver.typesafeRepo("releases")
+resolvers += Resolver.typesafeRepo("maven-releases")
 
 libraryDependencies += "com.typesafe" % "jstranspiler" % "1.0.0"
 
