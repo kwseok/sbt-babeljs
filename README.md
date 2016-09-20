@@ -8,7 +8,7 @@ Installation
 To use this plugin use the addSbtPlugin command within your project's `plugins.sbt` file:
 
 ```scala
-addSbtPlugin("com.github.stonexx.sbt" % "sbt-babeljs" % "1.0.4")
+addSbtPlugin("com.github.stonexx.sbt" % "sbt-babeljs" % "1.0.5")
 ```
 
 Your project's build file also needs to enable sbt-web plugins. For example with `build.sbt`:
